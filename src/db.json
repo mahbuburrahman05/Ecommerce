@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "sujon@gmail.com",
+      "password": "112233"
+    }
+  ],
+  "products": [
+    {
+      "id": "3",
+      "title": "Slim Fit Blue Jeans",
+      "price": 39.99,
+      "category": "Pant",
+      "image": "https://wrogn.com/cdn/shop/files/1_6b8140c5-6f1f-4483-9452-2c5fa2f45e09.jpg?v=1749210688"
+    },
+    {
+      "id": "4",
+      "title": "Casual Checked Shirt",
+      "price": 29.99,
+      "category": "Shirt",
+      "image": "https://static.cilory.com/681508-thickbox_default/nologo-white-navy-checked-casual-shirt.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Grey Cotton Joggers 334",
+      "price": 34.99,
+      "description": "",
+      "category": "Pant",
+      "image": "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/N78154s.jpg?im=Resize,width=750"
+    },
+    {
+      "id": "6",
+      "title": "Printed Summer T-Shirt",
+      "price": 22.5,
+      "category": "T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/81rgx5JtTiL._AC_UY1000_.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Denim Blue Shirt",
+      "price": 31.99,
+      "category": "Shirt",
+      "image": "https://powerlook.in/cdn/shop/files/1395621_3.jpg?v=1755937736"
+    },
+    {
+      "id": "8",
+      "title": "Winter Fleece Hoodie",
+      "price": 54.99,
+      "category": "Hoodie",
+      "image": "https://m.media-amazon.com/images/I/71QtRrVG-PL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Formal Black Pant",
+      "price": 42.99,
+      "category": "Pant",
+      "image": "https://i.pinimg.com/474x/a2/01/2e/a2012e8b5aaebcfa9dd4f93223130935.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Minimal Graphic Tee",
+      "price": 24.99,
+      "category": "T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/B1pppR4gVKL._CLa%7C2140%2C2000%7C415Ebf-mXlL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png"
+    },
+    {
+      "id": "11",
+      "title": "Olive Green Hoodie",
+      "price": 46.5,
+      "category": "Hoodie",
+      "image": "https://www.nextlevelapparel.com/cdn/shop/files/9307_LightOlive_Mens_F_M-898.jpg?v=1745862700&width=2048"
+    },
+    {
+      "id": "12",
+      "title": "Striped Casual Shirt",
+      "price": 33.99,
+      "category": "Shirt",
+      "image": "https://www.hancockfashion.com/cdn/shop/files/5315Black40_7.jpg?v=1734412212"
+    },
+    {
+      "id": "13",
+      "title": "Relaxed Fit Cargo Pant",
+      "price": 44.99,
+      "category": "Pant",
+      "image": "https://scdn.speedsize.com/591f72e6-02d5-4553-a81b-f6834ac1b523/arneclo.com/cdn/shop/files/RELAXED_FIT_COTTON_CARGO_PANT_IN_OLIVE_1_copy_89c0b545-6d96-4d42-84e5-68c344d62399.jpg?v=1758286049&width=1920"
+    },
+    {
+      "id": "14",
+      "title": "Vintage Washed T-Shirt",
+      "price": 27.99,
+      "category": "T-Shirt",
+      "image": "https://thesaucebasics.com/cdn/shop/files/TSPBU01-BLK-U-TOP-TEE-01-FLAT-GBG_51e9effd-7e86-4527-868a-795357c70c7e.jpg?v=1760989891&width=2048"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,109 @@
+<!-- PRODUCT GRID -->
+<div class="max-w-7xl mx-auto px-6 py-10">
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    @for (item of Products | async; track item.id) {
+
+    <!-- PRODUCT CARD -->
+    <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 group hover:scale-[1.02] hover:shadow-2xl transition-all duration-300">
+
+      <!-- IMAGE SECTION -->
+      <div class="relative bg-gray-100 p-4 overflow-hidden">
+
+        <!-- Badge -->
+        <span class="absolute top-3 left-3 bg-black text-white text-[10px] font-semibold px-2 py-1 rounded-full">
+          NEW
+        </span>
+
+        <!-- Wishlist -->
+        <button class="absolute top-3 right-3 bg-white w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-gray-100 transition text-sm">
+          ❤️
+        </button>
+
+        <!-- Product Image -->
+        <img
+          src="{{ item.image }}"
+          alt="{{ item.title }}"
+          class="h-44 w-full object-contain group-hover:scale-105 transition duration-500"
+        />
+
+      </div>
+
+      <!-- CONTENT -->
+      <div class="p-4">
+
+        <!-- CATEGORY -->
+        <p class="text-xs text-gray-400 mb-1 capitalize">
+          {{ item.category }}
+        </p>
+
+        <!-- TITLE -->
+        <h2 class="text-lg font-bold text-gray-900 leading-snug line-clamp-1">
+          {{ item.title }}
+        </h2>
+
+        <!-- Rating -->
+        <div class="flex items-center gap-2 mt-2">
+
+          <div class="flex text-yellow-400 text-xs">
+            ⭐ 4.8
+          </div>
+
+          <span class="text-gray-500 text-xs">
+            (120)
+          </span>
+
+        </div>
+
+        <!-- PRICE -->
+        <div class="flex items-center justify-between mt-3">
+
+          <span class="text-xl font-black text-gray-900">
+            ${{ item.price }}
+          </span>
+
+          <span class="text-green-500 font-semibold text-xs">
+            Sale
+          </span>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="flex gap-2 mt-4">
+
+          <button (click)="addToCart(item)" class="flex-1 bg-black hover:bg-gray-800 text-white py-2.5 rounded-xl text-sm font-semibold transition">
+            Add Cart
+          </button>
+
+          <button (click)="addToCart(item)" class="w-12 bg-gray-100 hover:bg-gray-200 rounded-xl transition text-sm">
+            🛒
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    }
+
+  </div>
+ <!-- FIXED CART BUTTON -->
+<a
+  routerLink="/cart"
+  class="fixed bottom-30 right-5 z-50 bg-black text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300"
+>
+
+  <!-- ICON -->
+  <span class="text-2xl">
+    🛒
+  </span>
+
+  <!-- COUNT -->
+  <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">
+    {{ allList.getCartItems().length }}
+  </span>
+
+</a>
+</div>

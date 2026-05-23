@@ -1,0 +1,134 @@
+<!-- ================= AUTH SECTION ================= -->
+
+<div class="min-h-screen bg-gray-100 flex items-center justify-center px-6 py-10">
+
+  <div class="max-w-6xl w-full bg-white rounded-3xl shadow-2xl overflow-hidden grid md:grid-cols-2">
+
+    <!-- ================= LEFT SIDE ================= -->
+    <div class="bg-indigo-600 text-white p-12 flex flex-col justify-center">
+
+      <span class="bg-white/20 w-fit px-4 py-2 rounded-full text-sm mb-6">
+        Welcome Back
+      </span>
+
+      <h1 class="text-5xl font-bold leading-tight mb-6">
+        Start Your Shopping Journey
+      </h1>
+
+      <p class="text-indigo-100 text-lg leading-8 mb-10">
+        Access premium products, modern collections and exclusive deals with your account.
+      </p>
+
+      <img
+        src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
+        class="rounded-3xl shadow-2xl h-[300px] object-cover"
+      />
+
+    </div>
+
+    <!-- ================= RIGHT SIDE ================= -->
+    <div class="p-10 md:p-14">
+
+      <!-- TOP -->
+      <div class="mb-10">
+
+        <h2 class="text-4xl font-bold text-gray-900 mb-3">
+          Create Account
+        </h2>
+
+        <p class="text-gray-500">
+          Sign up to continue shopping
+        </p>
+
+      </div>
+
+      <!-- FORM -->
+      <form class="space-y-5">
+
+        <!-- NAME -->
+        <div>
+
+          <label class="block mb-2 font-medium text-gray-700">
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="w-full border border-gray-300 rounded-2xl p-4 outline-none focus:border-indigo-500"
+          />
+
+        </div>
+
+        <!-- EMAIL -->
+        <div>
+
+          <label class="block mb-2 font-medium text-gray-700">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full border border-gray-300 rounded-2xl p-4 outline-none focus:border-indigo-500"
+          />
+
+        </div>
+
+        <!-- PASSWORD -->
+        <div>
+
+          <label class="block mb-2 font-medium text-gray-700">
+            Password
+          </label>
+
+          <input
+            type="password"
+            placeholder="Enter password"
+            class="w-full border border-gray-300 rounded-2xl p-4 outline-none focus:border-indigo-500"
+          />
+
+        </div>
+
+        <!-- CONFIRM PASSWORD -->
+        <div>
+
+          <label class="block mb-2 font-medium text-gray-700">
+            Confirm Password
+          </label>
+
+          <input
+            type="password"
+            placeholder="Confirm password"
+            class="w-full border border-gray-300 rounded-2xl p-4 outline-none focus:border-indigo-500"
+          />
+
+        </div>
+
+        <!-- BUTTON -->
+        <button
+          type="submit"
+          class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-4 rounded-2xl text-lg font-semibold transition">
+
+          Create Account
+
+        </button>
+
+      </form>
+
+      <!-- LOGIN LINK -->
+      <p class="text-center text-gray-500 mt-8">
+
+        Already have an account?
+
+        <a routerLink="/login" class="text-indigo-600 font-semibold">
+          Login
+        </a>
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>

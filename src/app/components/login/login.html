@@ -1,0 +1,89 @@
+
+<div class="min-h-screen bg-gray-100 flex items-center justify-center px-6">
+  <div class="w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden grid md:grid-cols-2">
+    <div class="hidden md:block relative">
+      <img
+        src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-10 text-white">
+        <h2 class="text-4xl font-bold mb-4">
+          Welcome Back
+        </h2>
+        <p class="text-lg text-gray-200 leading-8">
+          Login to access your products, orders and shopping experience.
+        </p>
+      </div>
+    </div>
+    <div class="p-10 md:p-14 flex flex-col justify-center">
+      <div class="mb-10">
+
+        <h1 class="text-4xl font-bold text-gray-900 mb-3">
+          Login
+        </h1>
+        <p class="text-gray-500">
+          Enter your account credentials
+        </p>
+      </div>
+      <form [formGroup]="loginForm" class="space-y-6">
+        <div>
+          <label class="block mb-2 font-medium text-gray-700">
+            Email Address
+          </label>
+          <input
+          formControlName="email"
+            type="email"
+            placeholder="Enter your email"
+            class="w-full border border-gray-300 rounded-2xl p-4 outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div>
+          <label class="block mb-2 font-medium text-gray-700">
+            Password
+          </label>
+          <input
+            formControlName="password"
+            type="password"
+            placeholder="Enter your password"
+            class="w-full border border-gray-300 rounded-2xl p-4 outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div class="flex items-center justify-between">
+
+          <label class="flex items-center gap-2 text-gray-600 text-sm">
+
+            <input type="checkbox" />
+
+            Remember Me
+
+          </label>
+
+          <a routerLink="/forgot-password" class="text-indigo-600 text-sm font-medium">
+            Forgot Password?
+          </a>
+
+        </div>
+        <button
+          type="submit"
+          (click)="onLogin()"
+          class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-4 rounded-2xl font-semibold text-lg transition">
+          Login
+        </button>
+
+      </form>
+
+      <p class="text-center text-gray-500 mt-8">
+
+        Don’t have an account?
+
+        <a routerLink="/signup" class="text-indigo-600 font-semibold">
+          Sign Up
+        </a>
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
